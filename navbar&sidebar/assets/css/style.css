@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  left: 0px;
+  background-color: #042331;
+  transition: .5s ease-in-out;
+  overflow-y: scroll;
+}
+
+.sidebar header {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-family
+}
+
+.sidebar ul li {
+  display: block;
+  padding-left: 20px;
+  color:white;
+  line-height: 50px;
+  font-size: 20px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+  transition: .4s ease;
+}
+
+.sidebar_elements li:hover {
+  padding-left: 40px;
+}
+
+#check {
+  display: none;
+}
+
+lebel #btn,
+lebel #cancel {
+  position: absolute;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 4px;
+}
+
+lebel #btn {
+  left: 40px;
+  top: 28px;
+  font-size: 15px;
+  background-color: #042331;
+  color: white;
+  padding: 6px 12px;
+
+}
+
+lebel #cancel {
+  z-index: 1111;
+  left: 195px;
+  position:fixed;
+  top: 15px;
+  background-color: #042331;
+  color: white;
+  padding: 4px 9px;
+}
+
+.navbar {
+  margin-left: 240px;
+  display: flex;
+ 
+  /* position: relative; */
+  background-color:  #042331;
+  color: white;
+  list-style-type: none;
+  line-height: 80px;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: .5s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+/* .navbar .about{
+  color: white;
+  size: 50px;
+  text-decoration: none;
+} */
+.about{
+  color: beige;
+  margin-right: 20px;
+  text-decoration: none;
+}
+/* media query */
+@media screen and (max-width: 480px) {
+  .navbar {
+    /* line-height: 20px; */
+    display: flex;
+    /* padding-top: 50px; */
+  }
+  .navbar ul li a{
+    display: none;
+    
+  }
+  
+
+}
+
+/* Grid items */
+.wrapper{
+  display: grid;
+  margin-left: 240px;
+ grid-row-gap: 1em;
+ grid-column-gap: 1em;
+  grid-template-columns: 70% 28%;
+  grid-auto-rows: minmax(100px,auto);
+  padding: 1em .5em;
+  transition: .5s ease-in-out;
+}
+.wrapper>div{
+  background-color: rgb(206, 128, 33);
+  pad: 5px 5px;
+  align-items: center;
+}
+.wrapper>div:nth-child(odd){
+  background-color: aquamarine;
+}
